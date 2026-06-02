@@ -1,0 +1,78 @@
+[
+  {
+    "title": "Локальная переменная",
+    "type": "code",
+    "question": "Создайте функцию show_name(), внутри неё создайте переменную name = 'Python' и выведите её.",
+    "check_contains": [
+      "def",
+      "show_name",
+      "name",
+      "print"
+    ],
+    "solution": "def show_name():\n    name = \"Python\"\n    print(name)\n\nshow_name()",
+    "hint": "Переменная внутри функции является локальной.",
+    "explanation": "Локальная переменная доступна только внутри функции.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Глобальная переменная",
+    "type": "code",
+    "question": "Создайте глобальную переменную language = 'Python'. Создайте функцию show_language(), которая выводит эту переменную.",
+    "check_contains": [
+      "language",
+      "def",
+      "show_language",
+      "print"
+    ],
+    "solution": "language = \"Python\"\n\ndef show_language():\n    print(language)\n\nshow_language()",
+    "hint": "Функция может читать глобальную переменную.",
+    "explanation": "Если локальной переменной нет, Python ищет имя в глобальной области.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Функция для площади",
+    "type": "code",
+    "question": "Разбейте вычисление площади прямоугольника на функцию area(width, height), которая возвращает результат.",
+    "check_contains": [
+      "def",
+      "area",
+      "return",
+      "*"
+    ],
+    "solution": "def area(width, height):\n    return width * height\n\nprint(area(5, 3))",
+    "hint": "Функция должна заниматься только вычислением площади.",
+    "explanation": "Хорошая функция выполняет одну понятную задачу.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Функции вызывают функции",
+    "type": "code",
+    "question": "Создайте функцию get_price(), которая возвращает 100. Создайте функцию get_total(), которая вызывает get_price() и возвращает цену * 2.",
+    "check_contains": [
+      "def",
+      "get_price",
+      "get_total",
+      "return"
+    ],
+    "solution": "def get_price():\n    return 100\n\ndef get_total():\n    return get_price() * 2\n\nprint(get_total())",
+    "hint": "Внутри get_total() можно вызвать get_price().",
+    "explanation": "Функции можно комбинировать между собой.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Мини-калькулятор",
+    "type": "code",
+    "question": "Создайте две функции: add(a, b) для сложения и multiply(a, b) для умножения. Выведите результаты для чисел 2 и 3.",
+    "check_contains": [
+      "def",
+      "add",
+      "multiply",
+      "return",
+      "print"
+    ],
+    "solution": "def add(a, b):\n    return a + b\n\ndef multiply(a, b):\n    return a * b\n\nprint(add(2, 3))\nprint(multiply(2, 3))",
+    "hint": "Каждая функция должна отвечать только за одну операцию.",
+    "explanation": "Так код становится понятнее и проще расширяется.",
+    "use_llm_check": true
+  }
+]

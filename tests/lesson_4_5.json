@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Что такое lambda-функция?",
+      "options": [
+        "Встроенная функция Python",
+        "Анонимная функция",
+        "Специальный тип класса",
+        "Цикл"
+      ],
+      "correct_index": 1,
+      "explanation": "Lambda — это анонимная функция, которая создаётся без имени."
+    },
+    {
+      "question": "Как правильно объявить lambda-функцию для сложения двух чисел?",
+      "options": [
+        "lambda x, y: x + y",
+        "def lambda(x, y): x + y",
+        "lambda(x, y) = x + y",
+        "function(x, y): x + y"
+      ],
+      "correct_index": 0,
+      "explanation": "Синтаксис lambda: lambda аргументы: выражение."
+    },
+    {
+      "question": "Что выведет код?\n\nadd = lambda a, b: a + b\nprint(add(2, 3))",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "Ошибка"
+      ],
+      "correct_index": 2,
+      "explanation": "Lambda возвращает сумму аргументов: 2 + 3 = 5."
+    },
+    {
+      "question": "В каком случае чаще всего используют lambda?",
+      "options": [
+        "Для больших программ на тысячи строк",
+        "Для коротких функций из одного выражения",
+        "Для создания классов",
+        "Для импорта библиотек"
+      ],
+      "correct_index": 1,
+      "explanation": "Lambda подходит для простых одноразовых функций."
+    },
+    {
+      "question": "С какой функцией часто используют lambda?",
+      "options": [
+        "open()",
+        "print()",
+        "map()",
+        "input()"
+      ],
+      "correct_index": 2,
+      "explanation": "Lambda часто используется вместе с map(), filter() и sorted()."
+    }
+  ]
+}

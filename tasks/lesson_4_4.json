@@ -1,0 +1,71 @@
+[
+  {
+    "title": "LEGB",
+    "type": "choice",
+    "question": "В каком порядке Python ищет переменные по правилу LEGB?",
+    "options": [
+      "Local → Enclosing → Global → Built-in",
+      "Global → Local → Built-in → Enclosing",
+      "Built-in → Global → Local → Enclosing"
+    ],
+    "correct_index": 0,
+    "explanation": "Python ищет имя в порядке Local, Enclosing, Global, Built-in."
+  },
+  {
+    "title": "global",
+    "type": "code",
+    "question": "Создайте глобальную переменную count = 0. Создайте функцию increase(), которая изменяет count через global и увеличивает его на 1.",
+    "check_contains": [
+      "count",
+      "def",
+      "global",
+      "+="
+    ],
+    "solution": "count = 0\n\ndef increase():\n    global count\n    count += 1\n\nincrease()\nprint(count)",
+    "hint": "Чтобы менять глобальную переменную внутри функции, нужно global.",
+    "explanation": "global сообщает Python, что нужно использовать переменную из глобальной области.",
+    "use_llm_check": true
+  },
+  {
+    "title": "nonlocal",
+    "type": "code",
+    "question": "Создайте функцию outer(), внутри неё count = 0. Внутри outer() создайте inner(), которая через nonlocal увеличивает count на 1.",
+    "check_contains": [
+      "def",
+      "outer",
+      "inner",
+      "nonlocal",
+      "+="
+    ],
+    "solution": "def outer():\n    count = 0\n\n    def inner():\n        nonlocal count\n        count += 1\n        print(count)\n\n    inner()\n\nouter()",
+    "hint": "nonlocal работает с переменной внешней функции.",
+    "explanation": "nonlocal нужен во вложенных функциях.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Built-in",
+    "type": "choice",
+    "question": "К какой области видимости относится функция len()?",
+    "options": [
+      "Local",
+      "Global",
+      "Built-in"
+    ],
+    "correct_index": 2,
+    "explanation": "len() — встроенная функция Python."
+  },
+  {
+    "title": "Не затирай len",
+    "type": "code",
+    "question": "Напишите пример правильного использования len() для строки 'Python'. Не создавайте переменную с именем len.",
+    "check_contains": [
+      "len",
+      "Python",
+      "print"
+    ],
+    "solution": "print(len(\"Python\"))",
+    "hint": "Не называйте переменные именами встроенных функций.",
+    "explanation": "Если создать переменную len, можно случайно затереть встроенную функцию.",
+    "use_llm_check": true
+  }
+]

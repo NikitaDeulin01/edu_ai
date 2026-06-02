@@ -1,0 +1,71 @@
+[
+  {
+    "title": "GET запрос",
+    "type": "code",
+    "question": "Импортируйте requests и отправьте GET-запрос на https://example.com.",
+    "check_contains": [
+      "import requests",
+      "requests.get"
+    ],
+    "solution": "import requests\n\nresponse = requests.get(\"https://example.com\")\nprint(response.text)",
+    "hint": "Для GET-запроса используется requests.get().",
+    "explanation": "response.text содержит HTML страницы.",
+    "use_llm_check": true
+  },
+  {
+    "title": "status_code",
+    "type": "code",
+    "question": "Отправьте GET-запрос и выведите status_code ответа.",
+    "check_contains": [
+      "requests.get",
+      "status_code",
+      "print"
+    ],
+    "solution": "import requests\n\nresponse = requests.get(\"https://example.com\")\nprint(response.status_code)",
+    "hint": "status_code показывает код ответа сервера.",
+    "explanation": "200 означает успешный запрос.",
+    "use_llm_check": true
+  },
+  {
+    "title": "BeautifulSoup h1",
+    "type": "code",
+    "question": "Создайте BeautifulSoup из HTML '<h1>Python</h1>' и выведите текст заголовка.",
+    "check_contains": [
+      "BeautifulSoup",
+      "html.parser",
+      ".text"
+    ],
+    "solution": "from bs4 import BeautifulSoup\n\nhtml = \"<h1>Python</h1>\"\nsoup = BeautifulSoup(html, \"html.parser\")\nprint(soup.h1.text)",
+    "hint": "Текст тега можно получить через .text.",
+    "explanation": "BeautifulSoup помогает извлекать данные из HTML.",
+    "use_llm_check": true
+  },
+  {
+    "title": "find_all",
+    "type": "code",
+    "question": "Дан HTML с несколькими li. Получите все li через find_all() и выведите их текст в цикле.",
+    "check_contains": [
+      "find_all",
+      "for",
+      ".text"
+    ],
+    "solution": "from bs4 import BeautifulSoup\n\nhtml = \"\"\"\n<li>Python</li>\n<li>Java</li>\n<li>Go</li>\n\"\"\"\n\nsoup = BeautifulSoup(html, \"html.parser\")\nitems = soup.find_all(\"li\")\n\nfor item in items:\n    print(item.text)",
+    "hint": "find_all возвращает список элементов.",
+    "explanation": "Так можно обрабатывать много одинаковых тегов.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Ссылка href",
+    "type": "code",
+    "question": "Дан HTML '<a href=\"https://python.org\">Python</a>'. Получите значение href.",
+    "check_contains": [
+      "BeautifulSoup",
+      "find",
+      "href"
+    ],
+    "solution": "from bs4 import BeautifulSoup\n\nhtml = '<a href=\"https://python.org\">Python</a>'\nsoup = BeautifulSoup(html, \"html.parser\")\nlink = soup.find(\"a\")\nprint(link[\"href\"])",
+    "hint": "Атрибут href доступен как link['href'].",
+    "explanation": "Так получают ссылки из HTML.",
+    "use_llm_check": true
+  }
+]

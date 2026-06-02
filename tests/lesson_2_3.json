@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Что делает функция int()?",
+    "options": [
+      "Преобразует значение в строку",
+      "Преобразует значение в целое число",
+      "Создаёт список",
+      "Удаляет дробную часть навсегда"
+    ],
+    "correct_index": 1,
+    "explanation": "int() преобразует значение в целое число."
+  },
+  {
+    "question": "Что выведет код?\n\nprint(int(\"25\") + 5)",
+    "options": [
+      "255",
+      "30",
+      "\"255\"",
+      "Ошибка"
+    ],
+    "correct_index": 1,
+    "explanation": "Строка \"25\" преобразуется в число 25."
+  },
+  {
+    "question": "Что произойдёт при выполнении кода?\n\nint(\"hello\")",
+    "options": [
+      "Вернётся 0",
+      "Вернётся False",
+      "Будет ValueError",
+      "Будет TypeError"
+    ],
+    "correct_index": 2,
+    "explanation": "Строку \"hello\" нельзя преобразовать в число."
+  },
+  {
+    "question": "Что выведет код?\n\nprint(float(10))",
+    "options": [
+      "10",
+      "10.0",
+      "\"10.0\"",
+      "Ошибка"
+    ],
+    "correct_index": 1,
+    "explanation": "float() превращает int в дробное число."
+  },
+  {
+    "question": "Что делает str()?",
+    "options": [
+      "Преобразует значение в строку",
+      "Удаляет пробелы",
+      "Создаёт список",
+      "Преобразует значение в bool"
+    ],
+    "correct_index": 0,
+    "explanation": "str() преобразует значение в строку."
+  },
+  {
+    "question": "Что выведет код?\n\nprint(bool(0))",
+    "options": [
+      "0",
+      "True",
+      "False",
+      "Ошибка"
+    ],
+    "correct_index": 2,
+    "explanation": "0 считается ложным значением."
+  },
+  {
+    "question": "Что выведет код?\n\nprint(bool(\"Python\"))",
+    "options": [
+      "False",
+      "0",
+      "True",
+      "Ошибка"
+    ],
+    "correct_index": 2,
+    "explanation": "Непустая строка считается True."
+  },
+  {
+    "question": "Что получится после выполнения кода?\n\nnumbers = [1, 1, 2, 2, 3]\nprint(set(numbers))",
+    "options": [
+      "[1, 1, 2, 2, 3]",
+      "{1, 2, 3}",
+      "(1, 2, 3)",
+      "Ошибка"
+    ],
+    "correct_index": 1,
+    "explanation": "set удаляет повторяющиеся элементы."
+  },
+  {
+    "question": "Как преобразовать tuple в list?",
+    "options": [
+      "tuple(data)",
+      "set(data)",
+      "dict(data)",
+      "list(data)"
+    ],
+    "correct_index": 3,
+    "explanation": "list() преобразует кортеж в список."
+  },
+  {
+    "question": "Что выведет код?\n\nprint(type(input()))",
+    "options": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'bool'>"
+    ],
+    "correct_index": 2,
+    "explanation": "input() всегда возвращает строку."
+  }
+]

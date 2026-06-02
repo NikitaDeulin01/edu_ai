@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Создай массив",
+    "type": "code",
+    "question": "Импортируйте NumPy как np и создайте массив [1, 2, 3]. Выведите его.",
+    "check_contains": [
+      "import numpy as np",
+      "np.array",
+      "print"
+    ],
+    "solution": "import numpy as np\n\narr = np.array([1, 2, 3])\nprint(arr)",
+    "hint": "Стандартный импорт: import numpy as np.",
+    "explanation": "np.array() создаёт массив NumPy.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Умножение массива",
+    "type": "code",
+    "question": "Создайте массив [1, 2, 3] и выведите результат умножения массива на 2.",
+    "check_contains": [
+      "np.array",
+      "* 2",
+      "print"
+    ],
+    "solution": "import numpy as np\n\narr = np.array([1, 2, 3])\nprint(arr * 2)",
+    "hint": "В NumPy операция применяется к каждому элементу.",
+    "explanation": "Массив [1, 2, 3] превратится в [2, 4, 6].",
+    "use_llm_check": true
+  },
+  {
+    "title": "zeros",
+    "type": "code",
+    "question": "Создайте массив из 5 нулей через NumPy.",
+    "check_contains": [
+      "np.zeros",
+      "5"
+    ],
+    "solution": "import numpy as np\n\narr = np.zeros(5)\nprint(arr)",
+    "hint": "Используйте np.zeros().",
+    "explanation": "np.zeros(5) создаёт массив из пяти нулей.",
+    "use_llm_check": true
+  },
+  {
+    "title": "shape",
+    "type": "code",
+    "question": "Создайте матрицу [[1, 2, 3], [4, 5, 6]] и выведите её shape.",
+    "check_contains": [
+      "np.array",
+      "shape",
+      "print"
+    ],
+    "solution": "import numpy as np\n\nmatrix = np.array([[1, 2, 3], [4, 5, 6]])\nprint(matrix.shape)",
+    "hint": "shape показывает размеры массива.",
+    "explanation": "У матрицы 2 строки и 3 столбца.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Среднее значение",
+    "type": "code",
+    "question": "Создайте массив [10, 20, 30] и выведите среднее значение.",
+    "check_contains": [
+      "np.array",
+      "mean",
+      "print"
+    ],
+    "solution": "import numpy as np\n\narr = np.array([10, 20, 30])\nprint(arr.mean())",
+    "hint": "У массива есть метод mean().",
+    "explanation": "Среднее значение равно 20.0.",
+    "use_llm_check": true
+  }
+]

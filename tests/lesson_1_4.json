@@ -1,0 +1,7 @@
+[
+  {"question": "Переменная в Python — это…", "options": ["Имя объекта в памяти", "Только число", "Файл", "Клавиша"], "correct_index": 0, "explanation": "Имя ссылается на объект."},
+  {"question": "Как создать переменную?", "options": ["var x", "x = 10", "int x;", "create x"], "correct_index": 1, "explanation": "Присваивание через =."},
+  {"question": "Стиль имён в Python (PEP 8)…", "options": ["camelCase", "snake_case", "kebab-case", "ПРОБЕЛЫ"], "correct_index": 1, "explanation": "snake_case — стандарт."},
+  {"question": "a, b = b, a делает…", "options": ["Ошибку", "Обмен значений", "Удаление b", "Компиляцию"], "correct_index": 1, "explanation": "Распаковка кортежа."},
+  {"question": "name и Name — …", "options": ["Одна переменная", "Разные переменные", "Ошибка", "Константы"], "correct_index": 1, "explanation": "Регистр важен."}
+]

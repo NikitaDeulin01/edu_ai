@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Наследование Animal",
+    "type": "code",
+    "question": "Создайте класс Animal с методом eat(). Создайте класс Dog, который наследуется от Animal. Вызовите eat() у объекта Dog.",
+    "check_contains": [
+      "class Animal",
+      "class Dog",
+      "Animal",
+      "eat"
+    ],
+    "solution": "class Animal:\n    def eat(self):\n        print(\"Ест\")\n\nclass Dog(Animal):\n    pass\n\ndog = Dog()\ndog.eat()",
+    "hint": "Наследование записывается class Dog(Animal).",
+    "explanation": "Дочерний класс получает методы родителя.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Переопределение speak",
+    "type": "code",
+    "question": "Создайте Animal.speak(), который выводит 'Звук'. Создайте Dog.speak(), который выводит 'Гав'.",
+    "check_contains": [
+      "class Animal",
+      "class Dog",
+      "speak",
+      "print"
+    ],
+    "solution": "class Animal:\n    def speak(self):\n        print(\"Звук\")\n\nclass Dog(Animal):\n    def speak(self):\n        print(\"Гав\")\n\nDog().speak()",
+    "hint": "В дочернем классе можно объявить метод с тем же именем.",
+    "explanation": "Это называется переопределением метода.",
+    "use_llm_check": true
+  },
+  {
+    "title": "super init",
+    "type": "code",
+    "question": "Создайте Animal с __init__(name). Создайте Dog(Animal), который принимает name и breed, вызывает super().__init__(name) и сохраняет breed.",
+    "check_contains": [
+      "super().__init__",
+      "breed",
+      "class Dog",
+      "class Animal"
+    ],
+    "solution": "class Animal:\n    def __init__(self, name):\n        self.name = name\n\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)\n        self.breed = breed\n\ndog = Dog(\"Шарик\", \"Овчарка\")\nprint(dog.name)\nprint(dog.breed)",
+    "hint": "super().__init__(name) вызывает конструктор родителя.",
+    "explanation": "super позволяет использовать логику родительского класса.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Полиморфизм",
+    "type": "code",
+    "question": "Создайте классы Dog и Cat с методом speak(). Поместите объекты в список animals и вызовите speak() в цикле.",
+    "check_contains": [
+      "class Dog",
+      "class Cat",
+      "speak",
+      "for"
+    ],
+    "solution": "class Dog:\n    def speak(self):\n        print(\"Гав\")\n\nclass Cat:\n    def speak(self):\n        print(\"Мяу\")\n\nanimals = [Dog(), Cat()]\n\nfor animal in animals:\n    animal.speak()",
+    "hint": "У разных объектов может быть метод с одним именем.",
+    "explanation": "Один интерфейс, разные реализации — это полиморфизм.",
+    "use_llm_check": true
+  },
+  {
+    "title": "isinstance",
+    "type": "choice",
+    "question": "Что вернёт isinstance(dog, Animal), если Dog наследуется от Animal?",
+    "options": [
+      "True",
+      "False",
+      "None"
+    ],
+    "correct_index": 0,
+    "explanation": "Объект дочернего класса также считается объектом родительского класса."
+  }
+]

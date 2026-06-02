@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Удвоение через lambda",
+    "type": "code",
+    "question": "Создайте lambda-функцию double, которая принимает число и возвращает его удвоенное значение.",
+    "check_contains": [
+      "lambda",
+      "double"
+    ],
+    "solution": "double = lambda x: x * 2\nprint(double(5))",
+    "hint": "Синтаксис: lambda x: выражение.",
+    "explanation": "Lambda автоматически возвращает результат выражения.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Сумма через lambda",
+    "type": "code",
+    "question": "Создайте lambda-функцию add, которая принимает два числа и возвращает их сумму.",
+    "check_contains": [
+      "lambda",
+      "add",
+      "+"
+    ],
+    "solution": "add = lambda a, b: a + b\nprint(add(2, 3))",
+    "hint": "Lambda может принимать несколько аргументов.",
+    "explanation": "lambda a, b: a + b возвращает сумму.",
+    "use_llm_check": true
+  },
+  {
+    "title": "sorted с key",
+    "type": "code",
+    "question": "Есть список users = [('Анна', 20), ('Иван', 18), ('Олег', 30)]. Отсортируйте его по возрасту через sorted() и lambda.",
+    "check_contains": [
+      "sorted",
+      "lambda"
+    ],
+    "solution": "users = [('Анна', 20), ('Иван', 18), ('Олег', 30)]\nresult = sorted(users, key=lambda user: user[1])\nprint(result)",
+    "hint": "Возраст находится по индексу 1.",
+    "explanation": "key=lambda user: user[1] говорит sorted сортировать по возрасту.",
+    "use_llm_check": true
+  },
+  {
+    "title": "map",
+    "type": "code",
+    "question": "Дан список numbers = [1, 2, 3]. Используйте map() и lambda, чтобы получить список [2, 4, 6].",
+    "check_contains": [
+      "map",
+      "lambda",
+      "list"
+    ],
+    "solution": "numbers = [1, 2, 3]\nresult = list(map(lambda x: x * 2, numbers))\nprint(result)",
+    "hint": "map применяет функцию к каждому элементу.",
+    "explanation": "lambda x: x * 2 применяется к каждому числу.",
+    "use_llm_check": true
+  },
+  {
+    "title": "filter",
+    "type": "code",
+    "question": "Дан список numbers = [1, 2, 3, 4, 5, 6]. Используйте filter() и lambda, чтобы оставить только чётные числа.",
+    "check_contains": [
+      "filter",
+      "lambda",
+      "%",
+      "list"
+    ],
+    "solution": "numbers = [1, 2, 3, 4, 5, 6]\nresult = list(filter(lambda x: x % 2 == 0, numbers))\nprint(result)",
+    "hint": "Чётные числа дают остаток 0 при делении на 2.",
+    "explanation": "filter оставляет элементы, для которых lambda возвращает True.",
+    "use_llm_check": true
+  }
+]

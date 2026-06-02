@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Для чего используется Pytest?",
+      "options": [
+        "Парсинг сайтов",
+        "Тестирование кода",
+        "Создание графиков",
+        "Работа с БД"
+      ],
+      "correct_index": 1,
+      "explanation": "Pytest предназначен для автоматического тестирования программ."
+    },
+    {
+      "question": "Как называется основной оператор проверки?",
+      "options": [
+        "check",
+        "verify",
+        "assert",
+        "test"
+      ],
+      "correct_index": 2,
+      "explanation": "assert проверяет ожидаемый результат."
+    },
+    {
+      "question": "Как должен называться файл тестов?",
+      "options": [
+        "calculator.py",
+        "tests.py",
+        "test_calculator.py",
+        "my_testfile.txt"
+      ],
+      "correct_index": 2,
+      "explanation": "Pytest автоматически ищет файлы, начинающиеся с test_."
+    },
+    {
+      "question": "Что означает результат '1 passed'?",
+      "options": [
+        "Один тест завершился ошибкой",
+        "Один тест пропущен",
+        "Один тест успешно выполнен",
+        "Тест не запускался"
+      ],
+      "correct_index": 2,
+      "explanation": "passed означает успешное прохождение теста."
+    },
+    {
+      "question": "Как проверить возникновение исключения?",
+      "options": [
+        "pytest.error()",
+        "pytest.catch()",
+        "pytest.raises()",
+        "pytest.exception()"
+      ],
+      "correct_index": 2,
+      "explanation": "raises() используется для проверки исключений."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Класс User",
+    "type": "code",
+    "question": "Создайте класс User с пустым телом через pass. Затем создайте объект user.",
+    "check_contains": [
+      "class",
+      "User",
+      "pass",
+      "User()"
+    ],
+    "solution": "class User:\n    pass\n\nuser = User()",
+    "hint": "Объект создаётся вызовом класса.",
+    "explanation": "Класс — шаблон, объект — экземпляр класса.",
+    "use_llm_check": true
+  },
+  {
+    "title": "__init__",
+    "type": "code",
+    "question": "Создайте класс User, который в __init__ принимает name и сохраняет его в self.name.",
+    "check_contains": [
+      "class",
+      "__init__",
+      "self",
+      "name"
+    ],
+    "solution": "class User:\n    def __init__(self, name):\n        self.name = name",
+    "hint": "__init__ вызывается при создании объекта.",
+    "explanation": "self.name хранит значение внутри конкретного объекта.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Два объекта",
+    "type": "code",
+    "question": "Создайте класс User с name. Создайте user1='Анна' и user2='Иван'. Выведите имена обоих объектов.",
+    "check_contains": [
+      "class",
+      "__init__",
+      "user1",
+      "user2",
+      "print"
+    ],
+    "solution": "class User:\n    def __init__(self, name):\n        self.name = name\n\nuser1 = User(\"Анна\")\nuser2 = User(\"Иван\")\n\nprint(user1.name)\nprint(user2.name)",
+    "hint": "У каждого объекта свои значения атрибутов.",
+    "explanation": "Объекты независимы друг от друга.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Класс Car",
+    "type": "code",
+    "question": "Создайте класс Car, который принимает brand и color. Создайте объект и выведите его brand.",
+    "check_contains": [
+      "class",
+      "Car",
+      "__init__",
+      "brand",
+      "color",
+      "print"
+    ],
+    "solution": "class Car:\n    def __init__(self, brand, color):\n        self.brand = brand\n        self.color = color\n\ncar = Car(\"Toyota\", \"red\")\nprint(car.brand)",
+    "hint": "Сохраните параметры в self.brand и self.color.",
+    "explanation": "Атрибуты объекта доступны через точку.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Что такое self",
+    "type": "choice",
+    "question": "Что означает self в методах класса?",
+    "options": [
+      "Текущий объект",
+      "Название класса",
+      "Глобальная переменная"
+    ],
+    "correct_index": 0,
+    "explanation": "self — ссылка на текущий объект."
+  }
+]

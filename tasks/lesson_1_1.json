@@ -1,0 +1,7 @@
+[
+  {"title": "Знакомство", "type": "choice", "question": "Чем вы будете учиться в этом курсе?", "options": ["Stepik", "Telegram-бот", "Бумажный учебник"], "correct_index": 1, "hint": "Курс в боте", "explanation": "Верно!"},
+  {"title": "Каталог", "type": "text", "question": "Какой командой открыть каталог уроков?", "acceptable_answers": ["/lessons", "/plan", "lessons", "plan"], "hint": "Команда с /", "explanation": "/lessons или /plan"},
+  {"title": "Прогресс", "type": "choice", "question": "Где смотреть прогресс?", "options": ["/progress", "/delete", "/shutdown"], "correct_index": 0, "explanation": "Команда /progress"},
+  {"title": "Вопрос AI", "type": "text", "question": "Команда для вопроса по уроку?", "acceptable_answers": ["/ask", "ask"], "hint": "Слэш-команда", "explanation": "/ask"},
+  {"title": "Первый код", "type": "code", "question": "Напишите print с текстом Hello", "check_contains": ["print", "hello"], "solution": "print(\"Hello\")", "hint": "print(...)", "explanation": "Любой print с Hello"}
+]

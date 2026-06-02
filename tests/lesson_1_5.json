@@ -1,0 +1,7 @@
+[
+  {"question": "Тип целых чисел…", "options": ["float", "int", "str", "bool"], "correct_index": 1, "explanation": "int — целые."},
+  {"question": "0.1 + 0.2 == 0.3 в float даёт…", "options": ["True всегда", "False из-за погрешности", "Ошибку", "None"], "correct_index": 1, "explanation": "Погрешность float."},
+  {"question": "Строки в Python…", "options": ["Изменяемые", "Неизменяемые", "Только числа", "Только bool"], "correct_index": 1, "explanation": "str immutable."},
+  {"question": "f\"{x}\" — это…", "options": ["f-строка", "Комментарий", "Импорт", "Цикл"], "correct_index": 0, "explanation": "f-строка подставляет значения."},
+  {"question": "Ложное значение…", "options": ["0", "1", "\"text\"", "[1]"], "correct_index": 0, "explanation": "0 — False в if."}
+]

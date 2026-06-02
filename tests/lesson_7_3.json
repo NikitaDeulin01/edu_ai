@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Для чего используется Matplotlib?",
+      "options": [
+        "Создание графиков",
+        "Тестирование",
+        "Создание ботов",
+        "Парсинг"
+      ],
+      "correct_index": 0,
+      "explanation": "Matplotlib используется для визуализации данных."
+    },
+    {
+      "question": "Как обычно импортируют pyplot?",
+      "options": [
+        "import matplotlib",
+        "import matplotlib.pyplot as plt",
+        "import pyplot",
+        "import matplotlib as plt"
+      ],
+      "correct_index": 1,
+      "explanation": "Общепринятое сокращение — plt."
+    },
+    {
+      "question": "Какая функция отображает график?",
+      "options": [
+        "plt.run()",
+        "plt.view()",
+        "plt.show()",
+        "plt.display()"
+      ],
+      "correct_index": 2,
+      "explanation": "show() выводит график на экран."
+    },
+    {
+      "question": "Какая функция строит линейный график?",
+      "options": [
+        "plt.plot()",
+        "plt.line()",
+        "plt.chart()",
+        "plt.graph()"
+      ],
+      "correct_index": 0,
+      "explanation": "plot() используется для построения линий."
+    },
+    {
+      "question": "Какая функция строит столбчатую диаграмму?",
+      "options": [
+        "plt.column()",
+        "plt.hist()",
+        "plt.bar()",
+        "plt.table()"
+      ],
+      "correct_index": 2,
+      "explanation": "bar() строит столбчатые диаграммы."
+    }
+  ]
+}

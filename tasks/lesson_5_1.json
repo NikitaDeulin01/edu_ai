@@ -1,0 +1,76 @@
+[
+  {
+    "title": "ValueError",
+    "type": "code",
+    "question": "Напишите try/except, который пытается преобразовать строку 'abc' в int и при ошибке выводит 'Нужно число'.",
+    "check_contains": [
+      "try",
+      "except",
+      "ValueError",
+      "int",
+      "print"
+    ],
+    "solution": "try:\n    number = int(\"abc\")\nexcept ValueError:\n    print(\"Нужно число\")",
+    "hint": "int('abc') вызывает ValueError.",
+    "explanation": "except ValueError перехватывает ошибку преобразования.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Деление на ноль",
+    "type": "code",
+    "question": "Напишите обработку ZeroDivisionError для выражения 10 / 0.",
+    "check_contains": [
+      "try",
+      "except",
+      "ZeroDivisionError"
+    ],
+    "solution": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print(\"На ноль делить нельзя\")",
+    "hint": "Ошибка деления на ноль называется ZeroDivisionError.",
+    "explanation": "try/except позволяет программе не упасть.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Несколько except",
+    "type": "code",
+    "question": "Напишите код, который обрабатывает ValueError и ZeroDivisionError в разных except.",
+    "check_contains": [
+      "try",
+      "except ValueError",
+      "except ZeroDivisionError"
+    ],
+    "solution": "try:\n    number = int(input())\n    result = 10 / number\nexcept ValueError:\n    print(\"Введите число\")\nexcept ZeroDivisionError:\n    print(\"На ноль делить нельзя\")",
+    "hint": "Можно написать несколько блоков except.",
+    "explanation": "Разные ошибки лучше обрабатывать отдельно.",
+    "use_llm_check": true
+  },
+  {
+    "title": "finally",
+    "type": "code",
+    "question": "Напишите try/except/finally, где finally выводит 'Конец'.",
+    "check_contains": [
+      "try",
+      "except",
+      "finally",
+      "print"
+    ],
+    "solution": "try:\n    number = int(\"abc\")\nexcept ValueError:\n    print(\"Ошибка\")\nfinally:\n    print(\"Конец\")",
+    "hint": "finally выполняется всегда.",
+    "explanation": "Блок finally используется для действий, которые нужны в любом случае.",
+    "use_llm_check": true
+  },
+  {
+    "title": "raise",
+    "type": "code",
+    "question": "Создайте переменную age = -1. Если age меньше 0, вызовите ValueError с текстом 'Возраст не может быть отрицательным'.",
+    "check_contains": [
+      "age",
+      "if",
+      "raise",
+      "ValueError"
+    ],
+    "solution": "age = -1\n\nif age < 0:\n    raise ValueError(\"Возраст не может быть отрицательным\")",
+    "hint": "Для генерации ошибки используется raise.",
+    "explanation": "raise позволяет создавать собственные ошибки.",
+    "use_llm_check": true
+  }
+]

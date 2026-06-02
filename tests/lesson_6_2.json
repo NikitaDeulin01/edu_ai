@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Что такое атрибут объекта?",
+      "options": [
+        "Свойство объекта",
+        "Функция",
+        "Модуль",
+        "Тип данных"
+      ],
+      "correct_index": 0,
+      "explanation": "Атрибут хранит данные объекта."
+    },
+    {
+      "question": "Что такое метод?",
+      "options": [
+        "Переменная класса",
+        "Функция внутри класса",
+        "Объект",
+        "Модуль"
+      ],
+      "correct_index": 1,
+      "explanation": "Метод — это функция, принадлежащая классу."
+    },
+    {
+      "question": "Как обратиться к атрибуту name объекта user?",
+      "options": [
+        "user->name",
+        "user[name]",
+        "user.name",
+        "name.user"
+      ],
+      "correct_index": 2,
+      "explanation": "В Python используется точечная нотация."
+    },
+    {
+      "question": "Что выведет код?\n\nuser.name = 'Иван'\nprint(user.name)",
+      "options": [
+        "Иван",
+        "name",
+        "Ошибка",
+        "None"
+      ],
+      "correct_index": 0,
+      "explanation": "Будет выведено значение атрибута."
+    },
+    {
+      "question": "Как вызвать метод объекта?",
+      "options": [
+        "user.method",
+        "method(user)",
+        "user.method()",
+        "call user.method()"
+      ],
+      "correct_index": 2,
+      "explanation": "Методы вызываются через круглые скобки."
+    }
+  ]
+}

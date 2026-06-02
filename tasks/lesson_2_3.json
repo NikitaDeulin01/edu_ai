@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Сумма чисел",
+    "type": "code",
+    "question": "Получите два числа через input(), преобразуйте их в int и выведите их сумму.",
+    "check_contains": ["input", "int", "print", "+"],
+    "solution": "a = int(input(\"Первое число: \"))\nb = int(input(\"Второе число: \"))\nprint(a + b)",
+    "hint": "Оба input() нужно преобразовать в int.",
+    "explanation": "input() возвращает строки, поэтому их нужно преобразовать в числа.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Среднее число",
+    "type": "code",
+    "question": "Получите два числа через input(), преобразуйте их в float и выведите среднее значение.",
+    "check_contains": ["float", "input", "print", "/"],
+    "solution": "a = float(input(\"Первое число: \"))\nb = float(input(\"Второе число: \"))\nprint((a + b) / 2)",
+    "hint": "Среднее значение — сумма чисел, делённая на 2.",
+    "explanation": "float() позволяет работать с дробными числами.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Булево значение",
+    "type": "code",
+    "question": "Выведите результат преобразования числа 0 в bool.",
+    "check_contains": ["bool", "0", "print"],
+    "solution": "print(bool(0))",
+    "hint": "0 считается ложным значением.",
+    "explanation": "bool(0) возвращает False.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Количество уникальных чисел",
+    "type": "code",
+    "question": "Создайте список [1, 1, 2, 3, 3, 4], преобразуйте его в set и выведите количество уникальных элементов через len().",
+    "check_contains": ["set", "len", "print"],
+    "solution": "numbers = [1, 1, 2, 3, 3, 4]\nunique_numbers = set(numbers)\nprint(len(unique_numbers))",
+    "hint": "set удаляет повторения.",
+    "explanation": "После преобразования в set остаются только уникальные значения.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Список из кортежа",
+    "type": "code",
+    "question": "Создайте кортеж ('Python', 'Java', 'C++'), преобразуйте его в list и добавьте элемент 'Go'. Затем выведите список.",
+    "check_contains": ["list", "append", "print"],
+    "solution": "languages = ('Python', 'Java', 'C++')\nlanguages = list(languages)\nlanguages.append('Go')\nprint(languages)",
+    "hint": "Сначала преобразуйте tuple в list.",
+    "explanation": "tuple неизменяемый, поэтому для добавления элемента его нужно преобразовать в list.",
+    "use_llm_check": true
+  }
+]

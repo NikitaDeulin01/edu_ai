@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Числа от 1 до 5",
+    "type": "code",
+    "question": "С помощью цикла for выведите числа от 1 до 5.",
+    "check_contains": ["for", "range", "print"],
+    "solution": "for i in range(1, 6):\n    print(i)",
+    "hint": "range(1, 6) создаёт числа от 1 до 5.",
+    "explanation": "for перебирает значения из range().",
+    "use_llm_check": true
+  },
+  {
+    "title": "Символы строки",
+    "type": "code",
+    "question": "Создайте переменную word = \"Python\" и выведите каждый символ строки через цикл for.",
+    "check_contains": ["for", "in", "print"],
+    "solution": "word = \"Python\"\n\nfor char in word:\n    print(char)",
+    "hint": "Строку можно перебирать как список символов.",
+    "explanation": "for позволяет проходить по каждому символу строки.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Сумма чисел",
+    "type": "code",
+    "question": "С помощью цикла for найдите сумму чисел от 1 до 5 и выведите результат.",
+    "check_contains": ["for", "range", "+=", "print"],
+    "solution": "total = 0\n\nfor i in range(1, 6):\n    total += i\n\nprint(total)",
+    "hint": "Создайте переменную total и увеличивайте её внутри цикла.",
+    "explanation": "Циклы часто используют для накопления суммы.",
+    "use_llm_check": true
+  },
+  {
+    "title": "while",
+    "type": "code",
+    "question": "С помощью цикла while выведите числа от 1 до 3.",
+    "check_contains": ["while", "print", "+="],
+    "solution": "count = 1\n\nwhile count <= 3:\n    print(count)\n    count += 1",
+    "hint": "Не забудьте увеличивать переменную внутри while.",
+    "explanation": "Если переменная не меняется, цикл может стать бесконечным.",
+    "use_llm_check": true
+  },
+  {
+    "title": "continue",
+    "type": "code",
+    "question": "С помощью цикла for выведите числа от 1 до 5, но пропустите число 3 через continue.",
+    "check_contains": ["for", "continue", "if", "print"],
+    "solution": "for i in range(1, 6):\n    if i == 3:\n        continue\n\n    print(i)",
+    "hint": "continue пропускает текущую итерацию.",
+    "explanation": "Когда i == 3, цикл переходит сразу к следующему шагу.",
+    "use_llm_check": true
+  }
+]

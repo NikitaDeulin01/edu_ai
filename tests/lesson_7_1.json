@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Для чего чаще всего используется библиотека NumPy?",
+      "options": [
+        "Создание Telegram-ботов",
+        "Работа с массивами и вычислениями",
+        "Тестирование кода",
+        "Парсинг сайтов"
+      ],
+      "correct_index": 1,
+      "explanation": "NumPy предназначена для эффективной работы с массивами и математическими вычислениями."
+    },
+    {
+      "question": "Как обычно импортируют NumPy?",
+      "options": [
+        "import numpy",
+        "import numpy as np",
+        "import np",
+        "from numpy import *"
+      ],
+      "correct_index": 1,
+      "explanation": "Общепринятое сокращение — np."
+    },
+    {
+      "question": "Как создать массив NumPy?",
+      "options": [
+        "np.array([1, 2, 3])",
+        "np.list([1, 2, 3])",
+        "array.create([1, 2, 3])",
+        "np.make([1, 2, 3])"
+      ],
+      "correct_index": 0,
+      "explanation": "Массив создаётся через np.array()."
+    },
+    {
+      "question": "Как получить среднее значение массива?",
+      "options": [
+        "np.avg()",
+        "np.mean()",
+        "np.average_value()",
+        "np.middle()"
+      ],
+      "correct_index": 1,
+      "explanation": "Для среднего значения используется np.mean()."
+    },
+    {
+      "question": "Главное преимущество NumPy?",
+      "options": [
+        "Красивый интерфейс",
+        "Высокая скорость вычислений",
+        "Работа с HTML",
+        "Работа с Telegram"
+      ],
+      "correct_index": 1,
+      "explanation": "NumPy значительно быстрее обычных списков Python."
+    }
+  ]
+}

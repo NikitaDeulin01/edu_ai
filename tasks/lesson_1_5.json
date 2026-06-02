@@ -1,0 +1,7 @@
+[
+  {"title": "Деление", "type": "text", "question": "Чему равно 10 // 3? (число)", "acceptable_answers": ["3"], "explanation": "Целочисленное деление 3"},
+  {"title": "float", "type": "choice", "question": "0.1+0.2 == 0.3 для float…", "options": ["False", "True"], "correct_index": 0, "explanation": "Погрешность"},
+  {"title": "Строка", "type": "code", "question": "Напишите print(\"Hi\" * 3)", "check_contains": ["print", "*", "3"], "solution": "print(\"Hi\" * 3)", "explanation": "Повторение строки"},
+  {"title": "bool", "type": "choice", "question": "bool(\"\") — …", "options": ["False", "True"], "correct_index": 0, "explanation": "Пустая строка ложная"},
+  {"title": "f-string", "type": "code", "question": "name=\"Ann\"; print(f\"Hi, {name}\")", "check_contains": ["f\"", "{name}", "print"], "solution": "print(f\"Hi, {name}\")", "hint": "f\"...{name}...\"", "explanation": "f-строка"}
+]

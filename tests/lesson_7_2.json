@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Для чего используется Pandas?",
+      "options": [
+        "Работа с таблицами и данными",
+        "Создание игр",
+        "Создание сайтов",
+        "Тестирование"
+      ],
+      "correct_index": 0,
+      "explanation": "Pandas предназначена для анализа и обработки табличных данных."
+    },
+    {
+      "question": "Как обычно импортируют Pandas?",
+      "options": [
+        "import pandas as pd",
+        "import pandas",
+        "import pd",
+        "from pandas import *"
+      ],
+      "correct_index": 0,
+      "explanation": "Стандартное сокращение — pd."
+    },
+    {
+      "question": "Что такое DataFrame?",
+      "options": [
+        "Функция",
+        "Таблица данных",
+        "Тип цикла",
+        "Файл"
+      ],
+      "correct_index": 1,
+      "explanation": "DataFrame — основной объект Pandas."
+    },
+    {
+      "question": "Какая функция читает CSV-файл?",
+      "options": [
+        "pd.load_csv()",
+        "pd.csv()",
+        "pd.read_csv()",
+        "pd.open_csv()"
+      ],
+      "correct_index": 2,
+      "explanation": "CSV-файлы обычно загружаются через pd.read_csv()."
+    },
+    {
+      "question": "Как вывести первые строки таблицы?",
+      "options": [
+        "df.start()",
+        "df.head()",
+        "df.first()",
+        "df.show()"
+      ],
+      "correct_index": 1,
+      "explanation": "head() показывает первые строки DataFrame."
+    }
+  ]
+}

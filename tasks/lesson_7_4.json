@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Первый тест",
+    "type": "code",
+    "question": "Напишите тест test_add(), который проверяет, что 2 + 3 == 5 через assert.",
+    "check_contains": [
+      "def test_",
+      "assert"
+    ],
+    "solution": "def test_add():\n    assert 2 + 3 == 5",
+    "hint": "Функция теста должна начинаться с test_.",
+    "explanation": "assert проверяет условие.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Тест функции add",
+    "type": "code",
+    "question": "Есть функция add(a, b). Напишите тест, который проверяет add(2, 3) == 5.",
+    "check_contains": [
+      "def test",
+      "assert",
+      "add"
+    ],
+    "solution": "def add(a, b):\n    return a + b\n\ndef test_add():\n    assert add(2, 3) == 5",
+    "hint": "В тесте вызовите функцию и сравните с ожидаемым результатом.",
+    "explanation": "Тест автоматически проверяет работу функции.",
+    "use_llm_check": true
+  },
+  {
+    "title": "pytest raises",
+    "type": "code",
+    "question": "Напишите тест, который проверяет, что 10 / 0 вызывает ZeroDivisionError.",
+    "check_contains": [
+      "pytest.raises",
+      "ZeroDivisionError"
+    ],
+    "solution": "import pytest\n\ndef test_zero_division():\n    with pytest.raises(ZeroDivisionError):\n        10 / 0",
+    "hint": "Используйте with pytest.raises(...).",
+    "explanation": "pytest.raises проверяет ожидаемое исключение.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Параметризация",
+    "type": "code",
+    "question": "Напишите пример pytest.mark.parametrize для проверки нескольких сложений.",
+    "check_contains": [
+      "pytest.mark.parametrize",
+      "assert"
+    ],
+    "solution": "import pytest\n\n@pytest.mark.parametrize(\n    \"a,b,result\",\n    [(2, 3, 5), (1, 1, 2)]\n)\ndef test_add(a, b, result):\n    assert a + b == result",
+    "hint": "Параметризация позволяет запускать один тест на разных данных.",
+    "explanation": "pytest создаст отдельный тест для каждого набора значений.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Имена тестов",
+    "type": "choice",
+    "question": "Как должна называться функция, чтобы pytest автоматически нашёл её?",
+    "options": [
+      "check_add",
+      "test_add",
+      "add_test"
+    ],
+    "correct_index": 1,
+    "explanation": "Pytest ищет функции, начинающиеся с test_."
+  }
+]

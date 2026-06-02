@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Метод greet",
+    "type": "code",
+    "question": "Создайте класс User с name и методом greet(), который выводит 'Привет, <name>!'.",
+    "check_contains": [
+      "class",
+      "def greet",
+      "self.name",
+      "print"
+    ],
+    "solution": "class User:\n    def __init__(self, name):\n        self.name = name\n\n    def greet(self):\n        print(f\"Привет, {self.name}!\")\n\nuser = User(\"Анна\")\nuser.greet()",
+    "hint": "Метод должен использовать self.name.",
+    "explanation": "Метод — функция внутри класса.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Counter",
+    "type": "code",
+    "question": "Создайте класс Counter с value = 0 и методом increase(), который увеличивает value на 1.",
+    "check_contains": [
+      "class",
+      "Counter",
+      "increase",
+      "self.value",
+      "+="
+    ],
+    "solution": "class Counter:\n    def __init__(self):\n        self.value = 0\n\n    def increase(self):\n        self.value += 1\n\ncounter = Counter()\ncounter.increase()\nprint(counter.value)",
+    "hint": "Изменяйте значение через self.value.",
+    "explanation": "Методы могут менять состояние объекта.",
+    "use_llm_check": true
+  },
+  {
+    "title": "BankAccount deposit",
+    "type": "code",
+    "question": "Создайте класс BankAccount с balance = 0 и методом deposit(amount), который пополняет баланс.",
+    "check_contains": [
+      "class",
+      "BankAccount",
+      "deposit",
+      "amount",
+      "+="
+    ],
+    "solution": "class BankAccount:\n    def __init__(self):\n        self.balance = 0\n\n    def deposit(self, amount):\n        self.balance += amount\n\naccount = BankAccount()\naccount.deposit(500)\nprint(account.balance)",
+    "hint": "Метод deposit должен принимать amount.",
+    "explanation": "Объект сам управляет своими данными через методы.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Приватный баланс",
+    "type": "code",
+    "question": "Создайте класс BankAccount с приватным атрибутом __balance и методом show_balance(), который возвращает баланс.",
+    "check_contains": [
+      "class",
+      "__balance",
+      "show_balance",
+      "return"
+    ],
+    "solution": "class BankAccount:\n    def __init__(self):\n        self.__balance = 0\n\n    def show_balance(self):\n        return self.__balance",
+    "hint": "Приватный атрибут начинается с двойного подчёркивания.",
+    "explanation": "Инкапсуляция ограничивает прямой доступ к внутренним данным.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Rectangle area",
+    "type": "code",
+    "question": "Создайте класс Rectangle с width и height. Добавьте метод area(), который возвращает площадь.",
+    "check_contains": [
+      "class",
+      "Rectangle",
+      "area",
+      "return",
+      "*"
+    ],
+    "solution": "class Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n\n    def area(self):\n        return self.width * self.height\n\nrect = Rectangle(5, 3)\nprint(rect.area())",
+    "hint": "Площадь прямоугольника: width * height.",
+    "explanation": "Методы могут возвращать вычисленные значения.",
+    "use_llm_check": true
+  }
+]

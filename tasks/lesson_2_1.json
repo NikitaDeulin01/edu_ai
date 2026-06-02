@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Привет, мир",
+    "type": "code",
+    "question": "Напишите программу, которая выводит строку: Привет, мир!",
+    "check_contains": ["print", "Привет"],
+    "solution": "print(\"Привет, мир!\")",
+    "hint": "Используйте функцию print()",
+    "explanation": "print() выводит текст на экран.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Имя пользователя",
+    "type": "code",
+    "question": "Создайте переменную name через input() и выведите её через print()",
+    "check_contains": ["input", "print", "name"],
+    "solution": "name = input(\"Введите имя: \")\nprint(name)",
+    "hint": "Сначала получите ввод, потом выведите переменную",
+    "explanation": "input() получает данные, print() выводит их.",
+    "use_llm_check": true
+  },
+  {
+    "title": "f-строка",
+    "type": "code",
+    "question": "Создайте переменную city = \"Москва\" и выведите строку: Я живу в городе Москва через f-строку.",
+    "check_contains": ["f\"", "{city}", "print"],
+    "solution": "city = \"Москва\"\nprint(f\"Я живу в городе {city}\")",
+    "hint": "Используйте f перед строкой",
+    "explanation": "В f-строках переменные вставляются через {}.",
+    "use_llm_check": true
+  },
+  {
+    "title": "sep",
+    "type": "code",
+    "question": "Выведите числа 1, 2 и 3 через print() так, чтобы между ними был символ '-'",
+    "check_contains": ["print", "sep"],
+    "solution": "print(1, 2, 3, sep=\"-\")",
+    "hint": "Используйте параметр sep",
+    "explanation": "sep задаёт разделитель между значениями.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Возраст",
+    "type": "code",
+    "question": "Получите возраст пользователя через input(), преобразуйте его в int и выведите через f-строку: Тебе X лет",
+    "check_contains": ["input", "int", "f\"", "print"],
+    "solution": "age = int(input(\"Возраст: \"))\nprint(f\"Тебе {age} лет\")",
+    "hint": "input() возвращает строку",
+    "explanation": "Для работы с числами ввод нужно преобразовать через int().",
+    "use_llm_check": true
+  }
+]

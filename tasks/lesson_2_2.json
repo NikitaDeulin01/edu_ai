@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Список имён",
+    "type": "code",
+    "question": "Создайте список names с тремя именами и выведите первый элемент списка.",
+    "check_contains": ["names", "[", "]", "print", "[0]"],
+    "solution": "names = [\"Анна\", \"Иван\", \"Мария\"]\nprint(names[0])",
+    "hint": "Индексация в списках начинается с 0.",
+    "explanation": "list хранит элементы по порядку, поэтому первый элемент имеет индекс 0.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Изменение списка",
+    "type": "code",
+    "question": "Создайте список numbers = [1, 2, 3], замените второй элемент на 100 и выведите список.",
+    "check_contains": ["numbers", "[1]", "100", "print"],
+    "solution": "numbers = [1, 2, 3]\nnumbers[1] = 100\nprint(numbers)",
+    "hint": "Второй элемент имеет индекс 1.",
+    "explanation": "list изменяемый, поэтому элементы можно менять по индексу.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Кортеж координат",
+    "type": "code",
+    "question": "Создайте кортеж point = (10, 20) и выведите второй элемент.",
+    "check_contains": ["point", "(", ")", "print", "[1]"],
+    "solution": "point = (10, 20)\nprint(point[1])",
+    "hint": "Кортеж тоже поддерживает индексы.",
+    "explanation": "tuple упорядоченный, поэтому к элементам можно обращаться по индексу.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Уникальные числа",
+    "type": "code",
+    "question": "Создайте список [1, 1, 2, 2, 3], преобразуйте его в set и выведите результат.",
+    "check_contains": ["set", "print"],
+    "solution": "numbers = [1, 1, 2, 2, 3]\nunique_numbers = set(numbers)\nprint(unique_numbers)",
+    "hint": "set хранит только уникальные значения.",
+    "explanation": "При преобразовании list в set повторяющиеся элементы удаляются.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Словарь пользователя",
+    "type": "code",
+    "question": "Создайте словарь user с ключами name и age. Затем выведите значение по ключу name.",
+    "check_contains": ["user", "{", "}", "name", "age", "print"],
+    "solution": "user = {\"name\": \"Анна\", \"age\": 25}\nprint(user[\"name\"])",
+    "hint": "В словаре значение получают по ключу.",
+    "explanation": "dict хранит пары ключ-значение. Значение можно получить через user[\"name\"].",
+    "use_llm_check": true
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Функция hello",
+    "type": "code",
+    "question": "Создайте функцию hello(), которая выводит строку 'Привет, Python!'. Затем вызовите эту функцию.",
+    "check_contains": [
+      "def",
+      "hello",
+      "print",
+      "hello()"
+    ],
+    "solution": "def hello():\n    print(\"Привет, Python!\")\n\nhello()",
+    "hint": "Сначала объявите функцию через def, затем вызовите её по имени со скобками.",
+    "explanation": "Функция выполняется только после вызова hello().",
+    "use_llm_check": true
+  },
+  {
+    "title": "Три вызова функции",
+    "type": "code",
+    "question": "Создайте функцию show_line(), которая выводит строку '-----'. Вызовите её 3 раза.",
+    "check_contains": [
+      "def",
+      "show_line",
+      "print"
+    ],
+    "solution": "def show_line():\n    print(\"-----\")\n\nshow_line()\nshow_line()\nshow_line()",
+    "hint": "Одну и ту же функцию можно вызвать несколько раз подряд.",
+    "explanation": "Функции помогают не копировать один и тот же код.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Вернуть число",
+    "type": "code",
+    "question": "Создайте функцию get_number(), которая возвращает число 10. Сохраните результат в переменную result и выведите её.",
+    "check_contains": [
+      "def",
+      "return",
+      "result",
+      "print"
+    ],
+    "solution": "def get_number():\n    return 10\n\nresult = get_number()\nprint(result)",
+    "hint": "Используйте return, а не print внутри функции.",
+    "explanation": "return возвращает значение программе, поэтому его можно сохранить в переменную.",
+    "use_llm_check": true
+  },
+  {
+    "title": "print или return",
+    "type": "code",
+    "question": "Создайте функцию get_message(), которая возвращает строку 'Готово'. Затем выведите результат вызова функции.",
+    "check_contains": [
+      "def",
+      "return",
+      "print",
+      "get_message"
+    ],
+    "solution": "def get_message():\n    return \"Готово\"\n\nprint(get_message())",
+    "hint": "Функция должна вернуть строку через return.",
+    "explanation": "Результат функции можно сразу передать в print().",
+    "use_llm_check": true
+  },
+  {
+    "title": "Функция вызывает функцию",
+    "type": "code",
+    "question": "Создайте функцию hello(), которая выводит 'Привет'. Создайте функцию start(), которая вызывает hello() и затем выводит 'Старт'. Вызовите start().",
+    "check_contains": [
+      "def",
+      "hello",
+      "start",
+      "print",
+      "start()"
+    ],
+    "solution": "def hello():\n    print(\"Привет\")\n\ndef start():\n    hello()\n    print(\"Старт\")\n\nstart()",
+    "hint": "Внутри одной функции можно вызвать другую функцию.",
+    "explanation": "Функции могут вызывать другие функции, так строятся большие программы.",
+    "use_llm_check": true
+  }
+]

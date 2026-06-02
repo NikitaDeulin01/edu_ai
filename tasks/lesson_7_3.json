@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Первый график",
+    "type": "code",
+    "question": "Импортируйте matplotlib.pyplot как plt, постройте график для x=[1,2,3], y=[2,4,6] и покажите его.",
+    "check_contains": [
+      "import matplotlib.pyplot as plt",
+      "plt.plot",
+      "plt.show"
+    ],
+    "solution": "import matplotlib.pyplot as plt\n\nx = [1, 2, 3]\ny = [2, 4, 6]\n\nplt.plot(x, y)\nplt.show()",
+    "hint": "Для отображения графика нужен plt.show().",
+    "explanation": "plot строит линейный график.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Заголовок и оси",
+    "type": "code",
+    "question": "Постройте график и добавьте title, xlabel и ylabel.",
+    "check_contains": [
+      "plt.plot",
+      "plt.title",
+      "plt.xlabel",
+      "plt.ylabel"
+    ],
+    "solution": "import matplotlib.pyplot as plt\n\nplt.plot([1, 2, 3], [10, 20, 30])\nplt.title(\"Продажи\")\nplt.xlabel(\"Месяц\")\nplt.ylabel(\"Доход\")\nplt.show()",
+    "hint": "Используйте title(), xlabel(), ylabel().",
+    "explanation": "Подписи делают график понятнее.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Столбчатая диаграмма",
+    "type": "code",
+    "question": "Постройте bar chart для names=['Анна','Иван'] и scores=[80,90].",
+    "check_contains": [
+      "plt.bar",
+      "plt.show"
+    ],
+    "solution": "import matplotlib.pyplot as plt\n\nnames = [\"Анна\", \"Иван\"]\nscores = [80, 90]\n\nplt.bar(names, scores)\nplt.show()",
+    "hint": "Для столбцов используется plt.bar().",
+    "explanation": "bar подходит для сравнения категорий.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Scatter",
+    "type": "code",
+    "question": "Постройте точечный график для x=[1,2,3] и y=[3,2,5].",
+    "check_contains": [
+      "plt.scatter",
+      "plt.show"
+    ],
+    "solution": "import matplotlib.pyplot as plt\n\nx = [1, 2, 3]\ny = [3, 2, 5]\n\nplt.scatter(x, y)\nplt.show()",
+    "hint": "Точечный график строится через scatter().",
+    "explanation": "scatter показывает отдельные точки.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Легенда",
+    "type": "code",
+    "question": "Постройте две линии с label и покажите легенду.",
+    "check_contains": [
+      "label",
+      "plt.legend",
+      "plt.plot"
+    ],
+    "solution": "import matplotlib.pyplot as plt\n\nx = [1, 2, 3]\nplt.plot(x, [10, 20, 30], label=\"Продажи\")\nplt.plot(x, [5, 10, 15], label=\"Прибыль\")\nplt.legend()\nplt.show()",
+    "hint": "legend() показывает подписи линий.",
+    "explanation": "Легенда помогает понять, какая линия что означает.",
+    "use_llm_check": true
+  }
+]

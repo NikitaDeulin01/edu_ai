@@ -1,0 +1,7 @@
+[
+  {"question": "Программа для компьютера — это…", "options": ["Список команд", "Только картинка", "База данных", "Вирус"], "correct_index": 0, "explanation": "Программа — инструкции для ПК."},
+  {"question": "Python — язык…", "options": ["Только компилируемый", "Интерпретируемый", "Только для HTML", "Без кода"], "correct_index": 1, "explanation": "Python выполняется интерпретатором."},
+  {"question": "Кто создал Python?", "options": ["Гвидо ван Россум", "Билл Гейтс", "Линус Торвальдс", "Дональд Кнут"], "correct_index": 0, "explanation": "Автор — Guido van Rossum."},
+  {"question": "В курсе используем версию…", "options": ["Python 2", "Python 3", "Python 1", "PHP"], "correct_index": 1, "explanation": "Только Python 3."},
+  {"question": "Плюс Python для новичка?", "options": ["Сложный синтаксис", "Простота и читаемость", "Нет библиотек", "Только Windows"], "correct_index": 1, "explanation": "Python прост для старта."}
+]

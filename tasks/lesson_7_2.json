@@ -1,0 +1,71 @@
+[
+  {
+    "title": "DataFrame",
+    "type": "code",
+    "question": "Импортируйте pandas как pd и создайте DataFrame с колонками name и age.",
+    "check_contains": [
+      "import pandas as pd",
+      "pd.DataFrame"
+    ],
+    "solution": "import pandas as pd\n\ndata = {\n    \"name\": [\"Анна\", \"Иван\"],\n    \"age\": [20, 25]\n}\n\ndf = pd.DataFrame(data)\nprint(df)",
+    "hint": "DataFrame можно создать из словаря.",
+    "explanation": "DataFrame — таблица данных.",
+    "use_llm_check": true
+  },
+  {
+    "title": "head",
+    "type": "code",
+    "question": "Создайте DataFrame и выведите первые строки через head().",
+    "check_contains": [
+      "pd.DataFrame",
+      "head",
+      "print"
+    ],
+    "solution": "import pandas as pd\n\ndf = pd.DataFrame({\"x\": [1, 2, 3]})\nprint(df.head())",
+    "hint": "head() показывает первые строки таблицы.",
+    "explanation": "Это одна из самых частых команд Pandas.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Выбор столбца",
+    "type": "code",
+    "question": "Создайте DataFrame с колонкой age и выведите только этот столбец.",
+    "check_contains": [
+      "pd.DataFrame",
+      "[\"age\"]",
+      "print"
+    ],
+    "solution": "import pandas as pd\n\ndf = pd.DataFrame({\"name\": [\"Анна\", \"Иван\"], \"age\": [20, 25]})\nprint(df[\"age\"])",
+    "hint": "Столбец получают через df['age'].",
+    "explanation": "Один столбец DataFrame является Series.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Фильтрация",
+    "type": "code",
+    "question": "Создайте DataFrame с возрастами и выведите строки, где age > 20.",
+    "check_contains": [
+      "pd.DataFrame",
+      "age",
+      ">",
+      "print"
+    ],
+    "solution": "import pandas as pd\n\ndf = pd.DataFrame({\"name\": [\"Анна\", \"Иван\"], \"age\": [20, 25]})\nprint(df[df[\"age\"] > 20])",
+    "hint": "Фильтр записывается внутри квадратных скобок.",
+    "explanation": "Pandas позволяет удобно фильтровать таблицы по условиям.",
+    "use_llm_check": true
+  },
+  {
+    "title": "read_csv",
+    "type": "code",
+    "question": "Напишите строку кода, которая читает файл users.csv в DataFrame df.",
+    "check_contains": [
+      "pd.read_csv",
+      "users.csv"
+    ],
+    "solution": "import pandas as pd\n\ndf = pd.read_csv(\"users.csv\")",
+    "hint": "CSV читается через pd.read_csv().",
+    "explanation": "read_csv — стандартный способ загрузки CSV-файлов.",
+    "use_llm_check": true
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {"title": "Понятие", "type": "choice", "question": "Программа — это…", "options": ["Команды для ПК", "Только ОС", "Монитор"], "correct_index": 0, "explanation": "Список инструкций"},
+  {"title": "Версия", "type": "text", "question": "Python 2 или 3 используем в курсе? (число)", "acceptable_answers": ["3", "python 3", "три"], "hint": "Новая версия", "explanation": "Python 3"},
+  {"title": "Тип языка", "type": "choice", "question": "Python — язык…", "options": ["интерпретируемый", "только машинный", "без кода"], "correct_index": 0, "explanation": "Интерпретируемый"},
+  {"title": "Код", "type": "code", "question": "Напишите print(\"Python\")", "check_contains": ["print", "python"], "solution": "print(\"Python\")", "explanation": "print с Python"},
+  {"title": "Автор", "type": "text", "question": "Фамилия создателя Python (рус/англ)", "acceptable_answers": ["ван россум", "van rossum", "россум", "rossum"], "hint": "Guido ...", "explanation": "Гвидо ван Россум"}
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Совершеннолетие",
+    "type": "code",
+    "question": "Получите возраст пользователя через input(). Если возраст >= 18 — выведите 'Доступ разрешён', иначе — 'Доступ запрещён'.",
+    "check_contains": ["if", "else", "input", "int", "print"],
+    "solution": "age = int(input(\"Возраст: \"))\n\nif age >= 18:\n    print(\"Доступ разрешён\")\nelse:\n    print(\"Доступ запрещён\")",
+    "hint": "Используйте if и else.",
+    "explanation": "if проверяет условие, а else выполняется при False.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Чётное число",
+    "type": "code",
+    "question": "Получите число через input(). Если число чётное — выведите 'Чётное', иначе — 'Нечётное'.",
+    "check_contains": ["if", "%", "print", "input", "int"],
+    "solution": "number = int(input(\"Число: \"))\n\nif number % 2 == 0:\n    print(\"Чётное\")\nelse:\n    print(\"Нечётное\")",
+    "hint": "Используйте оператор остатка %.",
+    "explanation": "Если остаток от деления на 2 равен 0 — число чётное.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Температура",
+    "type": "code",
+    "question": "Создайте переменную temperature = 15. Если температура меньше 0 — выведите 'Холодно', если меньше 20 — 'Прохладно', иначе — 'Тепло'.",
+    "check_contains": ["if", "elif", "else", "print"],
+    "solution": "temperature = 15\n\nif temperature < 0:\n    print(\"Холодно\")\nelif temperature < 20:\n    print(\"Прохладно\")\nelse:\n    print(\"Тепло\")",
+    "hint": "Используйте elif для нескольких условий.",
+    "explanation": "elif позволяет проверять дополнительные условия.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Выходной день",
+    "type": "code",
+    "question": "Создайте переменную day = 'суббота'. Если день — суббота или воскресенье, выведите 'Выходной'.",
+    "check_contains": ["if", "or", "print"],
+    "solution": "day = \"суббота\"\n\nif day == \"суббота\" or day == \"воскресенье\":\n    print(\"Выходной\")",
+    "hint": "Используйте оператор or.",
+    "explanation": "or возвращает True, если истинно хотя бы одно условие.",
+    "use_llm_check": true
+  },
+  {
+    "title": "Pythonic-проверка",
+    "type": "code",
+    "question": "Создайте переменную name = ''. Если строка пустая — выведите 'Имя не указано'. Используйте Pythonic-стиль.",
+    "check_contains": ["if not", "print"],
+    "solution": "name = \"\"\n\nif not name:\n    print(\"Имя не указано\")",
+    "hint": "Пустая строка считается False.",
+    "explanation": "В Python пустые строки являются falsy-значениями.",
+    "use_llm_check": true
+  }
+]

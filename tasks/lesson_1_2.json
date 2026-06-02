@@ -1,0 +1,7 @@
+[
+  {"title": "Практика", "type": "choice", "question": "Где решать 5 задач урока?", "options": ["В боте «Практика»", "На Stepik", "В почте"], "correct_index": 0, "explanation": "Кнопка Практика"},
+  {"title": "Тест", "type": "text", "question": "Сколько вопросов в мини-тесте? (число)", "acceptable_answers": ["5", "пять"], "hint": "Число", "explanation": "5 вопросов"},
+  {"title": "Разбор кода", "type": "text", "question": "Команда разбора кода?", "acceptable_answers": ["/debug", "debug"], "explanation": "/debug"},
+  {"title": "AI", "type": "choice", "question": "Кнопка «Объясни проще» использует…", "options": ["LLM", "Только шаблон", "Ничего"], "correct_index": 0, "explanation": "Нейросеть"},
+  {"title": "Код", "type": "code", "question": "Напишите print(4) — вывод числа 4", "check_contains": ["print", "4"], "solution": "print(4)", "hint": "2+2=4", "explanation": "Выведет 4"}
+]

@@ -1,0 +1,7 @@
+[
+  {"title": "Переменная", "type": "code", "question": "Создайте name = \"Анна\" и print(name)", "check_contains": ["name", "=", "print"], "solution": "name=\"Анна\"\nprint(name)", "explanation": "Переменная и вывод", "use_llm_check": true},
+  {"title": "Тип int", "type": "choice", "question": "age = 25 — тип age…", "options": ["int", "str", "bool"], "correct_index": 0, "explanation": "Целое int", "use_llm_check": true},
+  {"title": "Обмен", "type": "text", "question": "Как обменять a и b без третьей переменной?", "acceptable_answers": ["a, b = b, a", "a,b=b,a"], "hint": "Кортеж", "explanation": "a, b = b, a", "use_llm_check": true},
+  {"title": "PEP 8", "type": "choice", "question": "Правильное имя по PEP 8…", "options": ["user_age", "userAge", "User-Age"], "correct_index": 0, "explanation": "snake_case", "use_llm_check": true},
+  {"title": "bool", "type": "code", "question": "is_student = True — напишите print(type(is_student))", "check_contains": ["print", "type"], "solution": "print(type(is_student))", "explanation": "type() покажет bool", "use_llm_check": true}
+]
